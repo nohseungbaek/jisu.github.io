@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".btn").click(function() {
+			$(".popup_bg").css({
+				"display" : "block"
+			});
+
+		});
+
+		$(".popup_bg").click(function() {
+			$(this).css({
+				"display" : "none"
+			});
+
+		});
+
+	});
+	
+</script>
+
+<style>
+
+.btn {
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	background: skyblue;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.popup_bg {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.popup {
+	position: absolute;
+	top: calc(50% - 160px);
+	left: calc(50% - 150px);
+	widtg: 300px;
+	height: 300x;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.ment{
+	position: absolute;
+	top: calc(50% + 70px);
+	left: calc(50% - 150px);
+	widtg: 300px;
+	height: 150x;
+	background: rgba(255, 255, 255, 0.7);
+	font-family: "Comic Sans", "Apple Chancery", cursive;
+	font-size : 20px;
+	font-weight : bolder;
+	color : blue;
+}
+</style>
+<meta charset="UTF-8">
+<title>Jisu with me</title>
+</head>
+<body>
+	<div class="btn">♥지슈야♥</div>
+	지슈야를 눌러주세영
+	<div class="popup_bg">
+		<div class="popup"><img src = "image/JSSB.png" style="display: block; margin: 0 auto; "  alt="myimage"/> </div>
+		<div class = "ment"> 많이 사랑해 ! ♥축 56일♥ </div>
+	</div>
+</body>
+</html>
